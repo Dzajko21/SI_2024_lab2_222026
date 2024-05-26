@@ -71,7 +71,7 @@ Test Case 10: Payment Less Than Sum<br>
 
 <hr>
 
-Multiple Condition
+<b>Multiple Condition</b>
 
 Test Case 1: All Conditions True<br>
 •	Input: allItems = [new Item("item1", "012345", 400, 0.1f)], payment = 100<br>
