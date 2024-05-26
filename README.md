@@ -1,13 +1,13 @@
 Ристе Џајковски 222026
 
-CFG
+<b>CFG</b>
 
 ![Untitled Diagram (2)](https://github.com/Dzajko21/SI_2024_lab2_222026/assets/92513065/32e90b79-01aa-44af-9777-48eda10ea72c)
 <hr>
 Цикломатската комплексност на дадениот код изнесува 10.Ја добив според формулата V(G)=P+1,каде што P го означува бројот на предикатни јазли,а во кодот бројот на предикатни јазли е 9.
+<hr>
 
-
-Every Branch
+<b>Every Branch</b>
 
 
 Test Case 1: Null Item List
@@ -69,3 +69,4 @@ Test Case 10: Payment Less Than Sum
 •	Expected Output: false
 •	Description: Tests the branch where sum > payment.
 
+<br>
