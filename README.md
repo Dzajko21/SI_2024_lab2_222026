@@ -10,22 +10,22 @@
 <b>Every Branch</b>
 
 
-Test Case 1: Null Item List
-•	Input: allItems = null, payment = 100
-•	Expected Output: RuntimeException with message "allItems list can't be null!"
-•	Description: Tests the branch where allItems is null.
+Test Case 1: Null Item List<br>
+•	Input: allItems = null, payment = 100<br>
+•	Expected Output: RuntimeException with message "allItems list can't be null!"<br>
+•	Description: Tests the branch where allItems is null.<br>
 
 
-Test Case 2: Empty Item List
-•	Input: allItems = [], payment = 100
-•	Expected Output: true
-•	Description: Tests the branch where allItems is an empty list.
+Test Case 2: Empty Item List<br>
+•	Input: allItems = [], payment = 100<br>
+•	Expected Output: true<br>
+•	Description: Tests the branch where allItems is an empty list.<br>
 
 
-Test Case 3: Item with Null Name
-•	Input: allItems = [new Item(null, "12345", 100, 0.1f)], payment = 100
-•	Expected Output: true
-•	Description: Tests the branch where item.getName() == null and the name should be set to “unknown”.
+Test Case 3: Item with Null Name<br>
+•	Input: allItems = [new Item(null, "12345", 100, 0.1f)], payment = 100<br>
+•	Expected Output: true<br>
+•	Description: Tests the branch where item.getName() == null and the name should be set to “unknown”.<br>
 
 
 Test Case 4: Item with Empty Name
