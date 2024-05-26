@@ -28,45 +28,45 @@ Test Case 3: Item with Null Name<br>
 •	Description: Tests the branch where item.getName() == null and the name should be set to “unknown”.<br>
 
 
-Test Case 4: Item with Empty Name
-•	Input: allItems = [new Item("", "12345", 100, 0.1f)], payment = 100
-•	Expected Output: true
-•	Description: Tests the branch where item.getName().length() == 0 and the name should be set to “unknown”..
+Test Case 4: Item with Empty Name<br>
+•	Input: allItems = [new Item("", "12345", 100, 0.1f)], payment = 100<br>
+•	Expected Output: true<br>
+•	Description: Tests the branch where item.getName().length() == 0 and the name should be set to “unknown”..<br>
 
 
-Test Case 5: Item with Null Barcode
-•	Input: allItems = [new Item("item1", null, 100, 0.1f)], payment = 100
-•	Expected Output: RuntimeException with message "No barcode!"
-•	Description: Tests the branch where item.getBarcode() == null.
+Test Case 5: Item with Null Barcode<br>
+•	Input: allItems = [new Item("item1", null, 100, 0.1f)], payment = 100<br>
+•	Expected Output: RuntimeException with message "No barcode!"<br>
+•	Description: Tests the branch where item.getBarcode() == null.<br>
 
 
-Test Case 6: Item with Invalid Barcode Character
-•	Input: allItems = [new Item("item1", "123a5", 100, 0.1f)], payment = 100
-•	Expected Output: RuntimeException with message "Invalid character in item barcode!"
-•	Description: Tests the branch where allowed.indexOf(c) == -1.
+Test Case 6: Item with Invalid Barcode Character<br>
+•	Input: allItems = [new Item("item1", "123a5", 100, 0.1f)], payment = 100<br>
+•	Expected Output: RuntimeException with message "Invalid character in item barcode!"<br>
+•	Description: Tests the branch where allowed.indexOf(c) == -1.<br>
 
 
-Test Case 7: Item with Valid Barcode and No Discount
-•	Input: allItems = [new Item("item1", "12345", 100, 0.0f)], payment = 100
-•	Expected Output: true
-•	Description: Tests the branch where item.getDiscount() == 0.
+Test Case 7: Item with Valid Barcode and No Discount<br>
+•	Input: allItems = [new Item("item1", "12345", 100, 0.0f)], payment = 100<br>
+•	Expected Output: true<br>
+•	Description: Tests the branch where item.getDiscount() == 0.<br>
 
 
-Test Case 8: Item with Valid Barcode and Discount
-•	Input: allItems = [new Item("item1", "12345", 100, 0.1f)], payment = 10
-•	Expected Output: true
-•	Description: Tests the branch where item.getDiscount() > 0.
+Test Case 8: Item with Valid Barcode and Discount<br>
+•	Input: allItems = [new Item("item1", "12345", 100, 0.1f)], payment = 10<br>
+•	Expected Output: true<br>
+•	Description: Tests the branch where item.getDiscount() > 0.<br>
 
 
-Test Case 9: Special Discount Condition Met
-•	Input: allItems = [new Item("item1", "012345", 400, 0.1f)], payment = 100
-•	Expected Output: true
-•	Description: Tests the branch where item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'.
+Test Case 9: Special Discount Condition Met<br>
+•	Input: allItems = [new Item("item1", "012345", 400, 0.1f)], payment = 100<br>
+•	Expected Output: true<br>
+•	Description: Tests the branch where item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'.<br>
 
 
-Test Case 10: Payment Less Than Sum
-•	Input: allItems = [new Item("item1", "12345", 100, 0.0f)], payment = 50
-•	Expected Output: false
-•	Description: Tests the branch where sum > payment.
+Test Case 10: Payment Less Than Sum<br>
+•	Input: allItems = [new Item("item1", "12345", 100, 0.0f)], payment = 50<br>
+•	Expected Output: false<br>
+•	Description: Tests the branch where sum > payment.<br>
 
-<br>
+<hr>
