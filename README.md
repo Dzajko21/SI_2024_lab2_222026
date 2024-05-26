@@ -70,3 +70,54 @@ Test Case 10: Payment Less Than Sum<br>
 •	Description: Tests the branch where sum > payment.<br>
 
 <hr>
+
+Multiple Condition
+
+Test Case 1: All Conditions True<br>
+•	Input: allItems = [new Item("item1", "012345", 400, 0.1f)], payment = 100<br>
+•	Expected Output: Sum adjusted by -30 if condition meets (validating later stages of flow) <br>
+•	Description: Tests when all conditions are true. <br>
+
+
+Test Case 2: Price True, Discount True, Barcode False<br>
+•	Input: allItems = [new Item("item1", "112345", 400, 0.1f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when price and discount are true, but barcode condition is false. <br>
+
+
+Test Case 3: Price True, Discount False, Barcode True<br>
+•	Input: allItems = [new Item("item1", "012345", 400, 0.0f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when price and barcode conditions are true, but discount is false. <br>
+
+
+Test Case 4: Price True, Discount False, Barcode False<br>
+•	Input: allItems = [new Item("item1", "112345", 400, 0.0f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when only price condition is true. <br>
+
+
+Test Case 5: Price False, Discount True, Barcode True<br>
+•	Input: allItems = [new Item("item1", "012345", 200, 0.1f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when discount and barcode conditions are true, but price is false.<br>
+
+
+Test Case 6: Price False, Discount True, Barcode False<br>
+•	Input: allItems = [new Item("item1", "112345", 200, 0.1f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when only discount condition is true.<br>
+
+
+Test Case 7: Price False, Discount False, Barcode True<br>
+•	Input: allItems = [new Item("item1", "012345", 200, 0.0f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when only barcode condition is true.<br>
+
+
+Test Case 8: All Conditions False<br>
+•	Input: allItems = [new Item("item1", "112345", 200, 0.0f)], payment = 100<br>
+•	Expected Output: Sum not adjusted by -30<br>
+•	Description: Tests when all conditions are false.<br>
+
+<hr>
